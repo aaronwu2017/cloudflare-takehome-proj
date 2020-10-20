@@ -33,34 +33,37 @@ you will get `mycli` binary
 
 ## run --url
 ```shell script
-$ ./mycli --url https://api.muxiaoguo.cn/api/dujitang             
-Url : https://api.muxiaoguo.cn/api/dujitang
-StatusCode : 200
-Duratime : 453535972ns
-ResponseSize : 127
-Response : {"code":"200","msg":"success","data":{"comment":"你现在的生活，也许不是你想要的，但绝对是你自找的。"}}
 
+
+$ ./mycli --url http://xxcatchers.com/links
+Url : http://xxcatchers.com/links
+StatusCode : 200
+Duratime : 978446557ns
+ResponseSize : 156
+Response : {"HTML":"https://gothic-province-290512.uc.r.appspot.com","interview.io":"https://interviewing.io/","coivd tracker":"https://coronavirus.1point3acres.com/"}
 ```
 
 ## run --profile
 ```shell script
-$ ./mycli --url https://api.muxiaoguo.cn/api/dujitang --profile 20
-Url : https://api.muxiaoguo.cn/api/dujitang
+
+
+$ ./mycli --url http://xxcatchers.com/links -profile 20
+Url : http://xxcatchers.com/links
 ================
 TotalRequestNum : 20
-FastestTime : 58968046ns
-SlowestTime : 298615547ns
-MeanTime : 77617633.000000ns
-MedianTime : 61352383.000000ns
+FastestTime : 186749563ns
+SlowestTime : 398366555ns
+MeanTime : 208114797.000000ns
+MedianTime : 196916669.000000ns
 SuccessRequest : 20
 ErrorRequest : 0
-Percentage of requests : 100%
+Percentage of requests : 1.000000
 ErrorCode : []
 ErrorUrl : []
-SmallestRes(bytes) : 85
-LargestRes(bytes) : 175
+SmallestRes(bytes) : 156
+LargestRes(bytes) : 156
 ================
-Execute Duration : 1552445442ns
+Execute Duration : 4162382838ns
 
 
 
